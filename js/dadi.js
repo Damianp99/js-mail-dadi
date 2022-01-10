@@ -16,8 +16,17 @@ Consigli del giorno:
 5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 */
 
-const playerNumber = Math.floor(Math.random() * 6);
+const playerNumber = Math.floor(Math.random() * 7);
 console.log(playerNumber);
 
-const computerNumber = Math.floor(Math.random() * 6);
+const computerNumber = Math.floor(Math.random() * 7);
 console.log(computerNumber);
+
+if (playerNumber < computerNumber) {
+    console.log('The winner is the computer');
+} else if (playerNumber > computerNumber) {
+    console.log('The winner is the player')
+
+} else {
+    console.log('The result is a draw')
+}
