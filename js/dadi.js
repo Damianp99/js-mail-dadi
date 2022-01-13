@@ -16,10 +16,10 @@ Consigli del giorno:
 5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 */
 
-const playerNumber = Math.floor(Math.random() * 7);
+const playerNumber = Math.floor(Math.random() * 6 + 1);
 console.log(playerNumber);
 
-const computerNumber = Math.floor(Math.random() * 7);
+const computerNumber = Math.floor(Math.random() * 6 + 1);
 console.log(computerNumber);
 
 if (playerNumber < computerNumber) {
